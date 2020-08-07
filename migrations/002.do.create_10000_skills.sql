@@ -3,7 +3,7 @@ CREATE TABLE skills (
     title TEXT NOT NULL,
     time_left BIGINT NOT NULL,
     date_created TIMESTAMPTZ DEFAULT now() NOT NULL,
-    date_modified TIMESTAMPTZ,
+    date_modified TIMESTAMPTZ
 );
 
 ALTER TABLE skills

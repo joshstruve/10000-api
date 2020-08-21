@@ -24,14 +24,21 @@ To use the app, simply:
 
 ## Design Pattern
 10000 uses a "soft" neumorphic design pattern to ensure modernity and a pleasant user experience.
-
 ## API Endpoints
 ### Auth Endpoints
 #### POST
 
 ### User Endpoints
+#### POST
 
 ### Skill Endpoints
+#### GET
+
+#### POST
+
+#### PATCH
+
+#### DELETE
 
 ## Links
 Live App: https://10000-app.vercel.app/

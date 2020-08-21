@@ -42,22 +42,22 @@ Register a new account
 #### GET
 /api/skills
 
-Displays all skills for a logged-in user
+Display all skills for a logged-in user
 
 #### POST
 /api/skills
 
-Adds new skills created by logged-in users
+Add new skills created by logged-in users
 
 #### PATCH
 /api/skills/:skillsId
 
-Updates remaining time on the countdown timer for a logged-in user
+Update remaining time on the skill-specific countdown timer for a logged-in user
 
 #### DELETE
 /api/skills/:skillsId
 
-Deletes a skill for a logged-in user
+Delete a skill for a logged-in user
 
 ## Links
 Live App: https://10000-app.vercel.app/

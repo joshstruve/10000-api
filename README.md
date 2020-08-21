@@ -26,7 +26,7 @@ To use the app, simply:
 10000 uses a "soft" neumorphic design pattern to ensure modernity and a pleasant user experience.
 
 ## API Endpoints
-Auth Endpoints
+### Auth Endpoints
 
 User Endpoints
 

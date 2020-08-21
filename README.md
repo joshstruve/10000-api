@@ -28,12 +28,14 @@ To use the app, simply:
 ## API Endpoints
 ### Auth Endpoints
 #### POST
-'/api/auth/login'
+/api/auth/login
+
 Log in to a registered account
 
 ### User Endpoints
 #### POST
-'/api/users'
+/api/users
+
 Registers a new account
 
 ### Skill Endpoints

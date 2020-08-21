@@ -1,26 +1,37 @@
-# Express Boilerplate!
+## It Only Takes 10,000 Hours
 
-This is a boilerplate project used for starting new projects!
+In his book [Outliers](https://en.wikipedia.org/wiki/Outliers_(book)), Malcom Gladwell explains that reaching the 10,000-Hour Rule, which he considers the key to success in any field, is simply a matter of practicing a specific task for 10,000 hours, or 20 hours of work a week for 10 years. But despite the nobility of such an endeavor, accurately tracking progress up to 10,000 hours can be an overwhelming task in and of itself.
 
-## Set up
+## 10000
+10000 is a productivity app that helps you manage the skills that you want to learn and track the time you’ve spent learning up to 10,000 hours.
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+To use the app, simply:
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+1. Click "Get Started" from the home page
+![Home Page](./screenshots/10000-home.png "Home Page")
 
-## Scripts
+2. Log In (assuming that you have already registered)
+![Login Page](./screenshots/10000-login.png "Login")
 
-Start the application `npm start`
+3. Add a Skill
+![Add Skill Page](./screenshots/10000-addskill.png "Add Skill")
 
-Start nodemon for the application `npm run dev`
+4. Track Your Progress
+![Skills Page](./screenshots/10000-skills.png "Skills")
 
-Run the tests `npm test`
+## Technology Stack
+10000 is built using the PERN stack, which includes PostgreSQL, Express, React and Node.
 
-## Deploying
+## Design Pattern
+10000 uses a "soft" neumorphic design pattern to ensure modernity and a pleasant user experience.
 
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+## API Endpoints
+# Auth Endpoints
+
+# User Endpoints
+
+# Skill Endpoints
+
+## Links
+Live App: https://10000-app.vercel.app/
+Client Repo: https://github.com/thinkful-ei-panda/10000-client

@@ -27,6 +27,7 @@ To use the app, simply:
 
 ## API Endpoints
 ### Auth Endpoints
+#### POST
 
 ### User Endpoints
 

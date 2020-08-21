@@ -21,7 +21,7 @@ app.use(cors());
 app.use(helmet());
 
 app.get('/', (req,res) => {
-  res.status(200).send('Hello Boilerplate');
+  res.status(200).send('Hello, world!');
 });
 
 app.use('/api/auth', AuthRouter);

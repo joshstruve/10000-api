@@ -17,7 +17,7 @@ UsersRouter
         return res.status(400).json({error: `Missing ${key} in request body`});
       
     if(password.length <= 8)
-      return res.status(401).json({error: 'Password must be longer than 8 characters'});
+      return res.status(400).json({error: 'Password must be longer than 8 characters'});
 
     UsersService.hasUserWithEmail(req.app.get('db'),newUser.email)
       .then(hasUserWithEmail => {

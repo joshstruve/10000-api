@@ -47,7 +47,6 @@ skillsRouter
   
     //PATCH
     .patch(express.json(), (req,res,next) => {
-        console.log('here')
         const {skillsId} = req.params;
         const {time_left} = req.body;
     
@@ -55,7 +54,7 @@ skillsRouter
             time_left:parseInt(time_left),
         };
         
-        if(skillUpdateFields.time_left == null){    
+        if(!time_left){    
             return res.status(400).json({error: 'Needs at least one update field'});
           }
       

@@ -34,4 +34,5 @@ Skill Endpoints
 
 ## Links
 Live App: https://10000-app.vercel.app/
+
 Client Repo: https://github.com/thinkful-ei-panda/10000-client

@@ -28,9 +28,9 @@ To use the app, simply:
 ## API Endpoints
 ### Auth Endpoints
 
-User Endpoints
+### User Endpoints
 
-Skill Endpoints
+### Skill Endpoints
 
 ## Links
 Live App: https://10000-app.vercel.app/

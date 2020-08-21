@@ -26,11 +26,28 @@ To use the app, simply:
 10000 uses a "soft" neumorphic design pattern to ensure modernity and a pleasant user experience.
 
 ## API Endpoints
-Auth Endpoints
+### Auth Endpoints
+#### POST
+'/api/auth/login'
+Log in to a registered account
 
-User Endpoints
+### User Endpoints
+#### POST
+'/api/users'
+Registers a new account
 
-Skill Endpoints
+### Skill Endpoints
+#### GET
+
+
+#### POST
+
+
+#### PATCH
+
+
+#### DELETE
+
 
 ## Links
 Live App: https://10000-app.vercel.app/

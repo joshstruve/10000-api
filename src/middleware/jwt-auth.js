@@ -31,7 +31,6 @@ function requireAuth(req,res,next){
         next();
       });
   } catch (error) {
-    console.log('could not verify');
     res.status(401).json({error: 'Unauthorized request'});
   }
 }

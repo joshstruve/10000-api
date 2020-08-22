@@ -3,13 +3,10 @@ const skillsService = require('./skillsService');
 const skillsRouter = express.Router();
 const requireAuth = require('../middleware/jwt-auth');
 
-// need multiple routers - include skill id for patch & delete only
-
 skillsRouter
     .route('/')
     .all(requireAuth)
 
-    //GET
     .get((req,res,next) => {
         const owner_id = req.user.id;
 
@@ -21,7 +18,6 @@ skillsRouter
         .catch(next);
     })
 
-    //POST
     .post(express.json(), (req,res,next) => {
         const {title} = req.body || ''
         const owner_id = req.user.id;
@@ -40,12 +36,10 @@ skillsRouter
         .catch(next);
     })
 
-
 skillsRouter
 .route('/:skillsId')
 .all(requireAuth)
   
-    //PATCH
     .patch(express.json(), (req,res,next) => {
         const {skillsId} = req.params;
         const {time_left} = req.body;
@@ -75,7 +69,6 @@ skillsRouter
             .catch(next);
     })
 
-    //DELETE
     .delete(express.json(), (req,res,next) => {
 
     const {skillsId} = req.params;

@@ -29,8 +29,6 @@ describe('Skills Endpoints', () => {
 
   afterEach('cleanup', () => helpers.cleanTables(db));  
 
-  //GET
-
   describe('GET /api/skills', () => {
     context('given skills', () =>{
         const bearerToken = helpers.makeBearerToken(testUser); 
@@ -55,8 +53,6 @@ describe('Skills Endpoints', () => {
       return helpers.seedSkills(db,testSkills);
     });
 
-    //POST
-
     describe('POST /skills', () => {
       const newTestSkill = {
         title: 'impressive skill',
@@ -70,8 +66,6 @@ describe('Skills Endpoints', () => {
           .expect(201);
       });    
     });
-
-    //PATCH
 
     describe('PATCH /${skills_id}', () => {
       it('should return 400 with missing fields', () => {
@@ -108,8 +102,6 @@ describe('Skills Endpoints', () => {
           .expect(204);
       });
     });
-
-    //DELETE
 
     describe('DELETE /skills', () => {
       it('should return 400 if no matching id', () => {

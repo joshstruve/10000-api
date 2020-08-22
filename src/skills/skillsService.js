@@ -11,7 +11,6 @@ const skillsService = {
     },
   
     getSkillsByUserId(db, id){
-        console.log(id)
         return db ('skills')
             .join('users', 'skills.owner_id', '=', 'users.id')
             .select('skills.id', 'title', 'time_left')
@@ -35,7 +34,6 @@ const skillsService = {
     },
 
     updateSkill(db,id,skillUpdateFields){
-        console.log(skillUpdateFields)
         return db('skills')
         .update(skillUpdateFields)
         .where({id});

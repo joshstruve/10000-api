@@ -14,7 +14,7 @@ UsersRouter
 
     for(const [key,value] of Object.entries(newUser))
       if(!value)
-        return res.status(400).json({error: `Missing ${key} in request body`});
+        return res.status(400).json({error: `Missing ${key}`});
       
     if(password.length <= 8)
       return res.status(400).json({error: 'Password must be longer than 8 characters'});
